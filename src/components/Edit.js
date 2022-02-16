@@ -1,11 +1,9 @@
-import React, { Component} from 'react';
+import React from 'react'
 
-export default class Edit extends Component {
-  render() {
-    return (
-      <div>
-        <p>I am in Edit!</p>
-      </div>
-    )
-  }
+function Edit() {
+  return (
+    <div>I am in Edit</div>
+  )
 }
+
+export default Edit
