@@ -1,6 +1,6 @@
 import React from 'react';
 
- export default class Insert extends React.Component {
+class Insert extends React.Component {
   constructor(props){
     super(props);
     this.onChangeFirstName = this.onChangeFirstName.bind(this);
@@ -28,8 +28,8 @@ import React from 'react';
     e.preventDefault();
 
     const obj={
-      first_name: this.state.first_name,
-      last_name: this.state.last_name,
+      firstname: this.state.firstName,
+      lastname: this.state.lastName,
       email: this.state.email
     };
     console.log(obj)
@@ -43,7 +43,7 @@ import React from 'react';
          <label>First Name</label>
          <input type="text" className="form-control"
          value={this.state.firstName}
-         onChange={this.changeFirstName}/>
+         onChange={this.onChangeFirstName}/>
        </div>
        <div className="form-group">
          <label>Last Name</label>
@@ -65,3 +65,4 @@ import React from 'react';
   )
 }
 }
+export default Insert;
