@@ -1,5 +1,5 @@
 import React from 'react';
-
+import axios from 'axios';
 class Insert extends React.Component {
   constructor(props){
     super(props);
@@ -32,7 +32,9 @@ class Insert extends React.Component {
       lastname: this.state.lastName,
       email: this.state.email
     };
-    console.log(obj)
+   axios.post('http://localhost/BackEnd/insert.php', obj)
+   .then(res => console.log(res.data));
+    //console.log(obj)
   }
   render() {
   return (
