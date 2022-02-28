@@ -32,7 +32,7 @@ class Insert extends React.Component {
       lastname: this.state.lastName,
       email: this.state.email
     };
-   axios.post('http://localhost/BackEnd/insert.php', obj)
+   axios.post('', obj)
    .then(res => console.log(res.data));
     //console.log(obj)
   }

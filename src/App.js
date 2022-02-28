@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Insert from "./components/Insert";
 import Edit from "./components/Edit";
 import View from "./components/View";
-import Error from "./components/Error";
 import './App.css';
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
             <Route path="/insert" element={<Insert/>} />
             <Route path="/view" element={<View />} />
             <Route path="/edit" element={<Edit />} />
-           <Route path="*" element={<Error />} /> 
           </Routes>
       </div>
     </Router>
